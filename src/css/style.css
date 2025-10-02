@@ -18,31 +18,7 @@ html {
 
 /* ============== Header ================ */
 
-#header ul li {
-  font-size: 15px;
-}
-
 /* =============== Hero ================ */
-
-.circle-text {
-  display: flex;
-  position: absolute;
-  background-color: #000;
-  color: #fff;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  font-size: 25px;
-  font-weight: 200;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  word-spacing: 3.75px;
-}
-
-.logo-icon {
-  margin-top: 5.5rem;
-}
 
 .slide-text {
   display: inline-block;
