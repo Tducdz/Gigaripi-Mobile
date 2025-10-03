@@ -434,6 +434,9 @@
   .w-\[110px\] {
     width: 110px;
   }
+  .w-\[220px\] {
+    width: 220px;
+  }
   .w-\[236px\] {
     width: 236px;
   }
@@ -445,6 +448,12 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-max {
+    width: max-content;
+  }
+  .w-screen {
+    width: 100vw;
   }
   .max-w-200 {
     max-width: calc(var(--spacing) * 200);
@@ -630,6 +639,9 @@
   .bg-\[\#222\] {
     background-color: #222;
   }
+  .bg-\[\#101010\] {
+    background-color: #101010;
+  }
   .bg-\[\#535353\] {
     background-color: #535353;
   }
@@ -666,6 +678,12 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
@@ -683,6 +701,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -740,6 +761,9 @@
   }
   .pb-12 {
     padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-24 {
+    padding-bottom: calc(var(--spacing) * 24);
   }
   .pb-29 {
     padding-bottom: calc(var(--spacing) * 29);
@@ -842,6 +866,9 @@
   .text-\[15px\] {
     font-size: 15px;
   }
+  .text-\[120px\] {
+    font-size: 120px;
+  }
   .text-\[150px\] {
     font-size: 150px;
   }
@@ -939,6 +966,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .select-none {
     -webkit-user-select: none;
@@ -1044,6 +1076,12 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .sm\:text-base {
+    @media (width >= 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
   .sm\:text-lg {
     @media (width >= 40rem) {
       font-size: var(--text-lg);
@@ -1054,6 +1092,11 @@
     @media (width >= 40rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .sm\:text-\[150px\] {
+    @media (width >= 40rem) {
+      font-size: 150px;
     }
   }
   .lg\:w-\[42\%\] {

@@ -1,7 +1,7 @@
-const interval44 = setInterval(() => {
+const intervalBenefit = setInterval(() => {
   const el = document.querySelector(".items");
   if (el) {
-    clearInterval(interval44);
+    clearInterval(intervalBenefit);
     let isDown = false;
     let startX;
     let isDragging = false;

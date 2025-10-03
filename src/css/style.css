@@ -46,28 +46,20 @@ html {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
-  height: 550px;
-  width: 20px;
-  background: linear-gradient(90deg, #5bbdc8, transparent);
-}
-
-.items::before {
-  position: absolute;
-  content: "";
-  top: 0;
   right: 0;
   height: 550px;
   width: 20px;
   background: linear-gradient(-90deg, #5bbdc8, transparent);
 }
 
-.slide-desc {
-  width: 220px;
-  padding: 10px 36px;
-  color: #fff;
-  font-size: 20px;
-  background-color: #000;
+.items::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 550px;
+  width: 20px;
+  background: linear-gradient(90deg, #5bbdc8, transparent);
 }
 
 .slide-desc::after {
