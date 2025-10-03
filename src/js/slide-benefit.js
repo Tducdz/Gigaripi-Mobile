@@ -1,13 +1,53 @@
-const listSlide = document.getElementsByClassName("slide-item");
-const listText = document.getElementsByClassName("slide-desc");
-let dem = 0;
+const interval44 = setInterval(() => {
+  const el = document.querySelector(".items");
+  if (el) {
+    clearInterval(interval44);
+    let isDown = false;
+    let startX;
+    let isDragging = false;
+    let startY;
+    let scrollLeft;
+    const slider = document.querySelector(".items");
 
-const nextSlide = () => {
-  listSlide[dem].classList.remove("active");
-  listText[dem].classList.remove("active");
-  dem = (dem + 1) % listSlide.length;
-  listSlide[dem].classList.add("active");
-  listText[dem].classList.add("active");
-};
+    const end = () => {
+      isDown = false;
+    };
 
-setInterval(nextSlide, 3000);
+    const start = (e) => {
+      isDown = true;
+      isDragging = false;
+      startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+      startY = e.pageY || e.touches[0].pageY;
+      scrollLeft = slider.scrollLeft;
+    };
+
+    const move = (e) => {
+      if (!isDown) return;
+
+      const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+      const y = e.pageY || e.touches[0].pageY;
+      const distX = x - startX;
+      const distY = y - startY;
+
+      if (Math.abs(distX) > Math.abs(distY)) {
+        e.preventDefault();
+        isDragging = true;
+        slider.scrollLeft = scrollLeft - distX;
+      }
+    };
+
+    (() => {
+      slider.scrollLeft = (slider.scrollWidth - slider.clientWidth) / 2;
+
+      slider.addEventListener("mousedown", start);
+      slider.addEventListener("touchstart", start);
+
+      slider.addEventListener("mousemove", move);
+      slider.addEventListener("touchmove", move);
+
+      slider.addEventListener("mouseleave", end);
+      slider.addEventListener("mouseup", end);
+      slider.addEventListener("touchend", end);
+    })();
+  }
+}, 100);
