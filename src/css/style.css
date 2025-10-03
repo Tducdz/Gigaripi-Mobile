@@ -74,12 +74,6 @@ html {
 
 /* ================= Value-1 ================== */
 
-@media (width > 2367px) {
-  .value-slider {
-    justify-content: center;
-  }
-}
-
 /* ================= Value-2 ================== */
 
 .img-value-2 {

@@ -1,58 +1,100 @@
 <div class="flex justify-around">
   <div class="flex items-center">
-    <p class="text-xl sm:text-3xl">ギガリピの<br />バリュー</p>
+    <p class="text-lg sm:text-3xl">ギガリピの<br />バリュー</p>
     <p class="text-[120px] sm:text-[150px] text-[#fabe00]">1</p>
-    <p class="text-3xl sm:text-5xl">リピート戦略</p>
+    <p class="text-2xl sm:text-5xl">リピート戦略</p>
   </div>
 </div>
 
-<div class="">
-  <img class="w-screen" src="src/assets/img/value-1.1.png" alt="" />
-  <div class="flex text-2xl font-bold gap-1 pt-6">LINE友だち登録</div>
+<div class="value1-slider">
+  <div class="value1-item">
+    <img class="w-screen" src="src/assets/img/value-1.1.png" alt="" />
 
-  <div class="flex text-2xl font-bold gap-1 pt-6">
-    <img
-      src="src/assets/img/right-arrow(yellow).svg"
-      alt=""
-    />即クーポン&スタンプ
+    <div class="flex flex-col gap-2 p-6 min-h-[270px]">
+      <div class="text-2xl sm:text-4xl font-bold">LINE友だち登録</div>
+      <div class="flex gap-1 text-2xl sm:text-4xl font-bold">
+        <img
+          src="src/assets/img/right-arrow(yellow).svg"
+          alt=""
+        />即クーポン&スタンプ
+      </div>
+      <p class="sm:text-2xl">
+        レジにてQRを読み込み、その場で使えるクーポンゲット！
+      </p>
+      <p class="sm:text-2xl">面倒な個人情報の入力は不要！</p>
+    </div>
   </div>
-  <p class="mt-2">
-    レジにてQRを読み込み、その場で使えるクーポンゲット！<br />面倒な個人情報の入力は不要！
-  </p>
+
+  <div class="value1-item hidden">
+    <img class="w-screen" src="src/assets/img/value-1.2.png" alt="" />
+
+    <div class="flex flex-col gap-2 p-6 min-h-[264px]">
+      <div class="text-2xl sm:text-4xl font-bold">アンケートで個人情報獲得</div>
+      <div class="flex gap-1 text-2xl sm:text-4xl font-bold">
+        <img
+          src="src/assets/img/right-arrow(yellow).svg"
+          alt=""
+        />アンケートクーポン
+      </div>
+      <p class="sm:text-2xl">
+        アンケート依頼を自動で送信。答えるとクーポンゲット！
+      </p>
+      <p class="sm:text-2xl">
+        前日の購入情報と個人情報が紐づくので、分析がしっかりできる
+      </p>
+    </div>
+  </div>
+
+  <div class="value1-item hidden">
+    <img class="w-screen" src="src/assets/img/value-1.3.png" alt="" />
+
+    <div class="flex flex-col gap-2 p-6 min-h-[264px]">
+      <div class="text-2xl sm:text-4xl font-bold">LINEリマインドメッセージ</div>
+
+      <p class="sm:text-2xl">
+        アンケートのクーポンがあるのに再訪してないユーザーを狙い撃ちでクーポン
+      </p>
+      <p class="sm:text-2xl">利用をリマインド</p>
+    </div>
+  </div>
 </div>
-<div class="flex items-center gap-3">
+
+<div class="flex items-center justify-center gap-3">
   <img
-    class="btn-value-left bg-[#f1f1f1] p-4 rounded-full w-[50px] h-[50px] cursor-pointer"
+    class="btn-value-left bg-[#f1f1f1] p-4 rounded-full w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] sm:p-6"
     src="src/assets/img/left-triangle.svg"
     alt=""
   />
   <img
-    class="btn-value-right bg-[#f1f1f1] p-4 rounded-full w-[50px] h-[50px] cursor-pointer"
+    class="btn-value-right bg-[#f1f1f1] p-4 rounded-full w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] sm:p-6"
     src="src/assets/img/right-triangle.svg"
     alt=""
   />
 </div>
-<!-- <div class="mx-auto pb-60">
-  <div class="flex items-center justify-center">
-    <div class="border-l-2 text-lg text-center mb-5 relative">
-      <img class="px-34" src="src/assets/img/value-1.4.svg" alt="" />
-      <p class="mt-5">スタンプの有効期限が<br />あと1週間です！</p>
-      <p
-        class="absolute -top-[8rem] text-left tracking-[0.075em] text-3xl font-bold"
-      >
-        あらゆるリマインドで<br />再訪を促します
-      </p>
-    </div>
-    <div class="border-l-2 text-lg text-center mb-5">
-      <img class="px-34" src="src/assets/img/value-1.5.svg" alt="" />
-      <p class="mt-5">
-        購買履歴に沿った、アフターフォロー、<br />新商品や関連商品おすすめ
-      </p>
-    </div>
-    <div class="border-l-2 text-lg text-center mb-5 border-r-2">
-      <img class="px-34" src="src/assets/img/value-1.6.svg" alt="" />
-      <p class="mt-5">お得なセールを開催中！</p>
-      <p class="invisible">Dong chu an</p>
-    </div>
+
+<p class="text-center tracking-[0.075em] text-2xl sm:text-4xl font-bold mt-20">
+  あらゆるリマインドで<br />再訪を促します
+</p>
+
+<div class="flex flex-col items-center justify-center mt-10 px-6">
+  <div
+    class="flex items-center w-full justify-between gap-4 py-6 border-b-2 border-[#666] mb-5 relative"
+  >
+    <img class="w-1/3" src="src/assets/img/value-1.4.svg" alt="" />
+    <p class="text-xl sm:text-3xl flex-1 font-medium">
+      スタンプの有効期限が あと1週間です！
+    </p>
   </div>
-</div> -->
+  <div
+    class="flex items-center w-full justify-between gap-4 py-6 border-b-2 border-[#666] mb-5"
+  >
+    <img class="w-1/3" src="src/assets/img/value-1.5.svg" alt="" />
+    <p class="text-xl sm:text-3xl flex-1 font-medium">
+      購買履歴に沿った、アフターフォロー、新商品や関連商品おすすめ
+    </p>
+  </div>
+  <div class="flex items-center w-full justify-between gap-4 py-6 mb-5">
+    <img class="w-1/3" src="src/assets/img/value-1.6.svg" alt="" />
+    <p class="text-xl sm:text-3xl flex-1 font-medium">お得なセールを開催中！</p>
+  </div>
+</div>
