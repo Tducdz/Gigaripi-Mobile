@@ -30,12 +30,12 @@ GIGARIPI_Mobile/
 ## Cài đặt và chạy dự án
 
 1. Clone dự án
-git clone https://github.com/Tducdz/Gigaripi-Mobile.git
-cd Gigaripi-Mobile
+- git clone https://github.com/Tducdz/Gigaripi-Mobile.git
+- cd Gigaripi-Mobile
 2. Cài đặt dependencies
-npm install
+ - npm install
 3. Chạy tailwind (watch mode)
-npm run tailwind:watch
+- npm run tailwind:watch
 4. Mở index.html
 
 ## Công nghệ sử dụng
@@ -43,4 +43,5 @@ npm run tailwind:watch
 - CSS3 / TailwindCSS v4 
 - JavaScript (ES6+)
 - Node.js + npm
+
 
