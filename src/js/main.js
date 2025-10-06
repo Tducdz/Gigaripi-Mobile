@@ -12,6 +12,6 @@ loadComponents("value-2", "value-2.html");
 loadComponents("feature", "feature.html");
 loadComponents("functions", "functions.html");
 loadComponents("plans", "plans.html");
-// loadComponents("tutorial", "tutorial.html");
-// loadComponents("contact", "contact.html");
+loadComponents("tutorial", "tutorial.html");
+loadComponents("contact", "contact.html");
 // loadComponents("footer", "footer.html");

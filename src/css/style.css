@@ -90,6 +90,6 @@ html {
   transition: all 0.4s ease-in-out;
 }
 
-.question:hover .answer {
+.question .active {
   max-height: 1000px;
 }
