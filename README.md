@@ -2,6 +2,7 @@
 
 ## Cấu trúc thư mục
 
+``` bash
 GIGARIPI_Mobile/
 │
 ├── node_modules/
@@ -24,6 +25,7 @@ GIGARIPI_Mobile/
 ├── package.json 
 ├── package-lock.json 
 └── README.md
+```
 
 ## Cài đặt và chạy dự án
 
@@ -41,3 +43,4 @@ npm run tailwind:watch
 - CSS3 / TailwindCSS v4 
 - JavaScript (ES6+)
 - Node.js + npm
+
